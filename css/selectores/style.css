@@ -1,0 +1,21 @@
+body{
+    background-color: #333;
+}
+
+/* Selecciona el "hermano" de la clase, pero solo el siguiente */
+/* .title + h2{
+    color: red;
+} */
+
+.box .title{
+    color: red;
+}
+
+.box .box2 .title{
+    color:blue;
+}
+
+/* Toma los hijos directos, no todos */
+.box>.title{
+    color:aqua
+}
