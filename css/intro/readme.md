@@ -34,16 +34,6 @@ Selectores:
 
 Cuando pasamos el mouse por encima de un selector, vs code nos va a mostrar 3 números. Estos nos dan info sobre que tan específico es.
 
-### Box-model
+#### Parciales
 
-El modelo de cajas se basa en que cada elemento de HTML tiene:
-
--   Contenido: La medida del propio elemento.
--   Bordes: Lo puedo hacer más ancho o cambiarle el color/diseño.
--   Padding: La distancia entre el elemento y el borde.
--   Margin: La distancia entre cada una de sus cajas (cada caja tiene su propio margin).
-
-## Medidas:
-
--   Absolutas: Una medida que no va a cambiar. px.
--   Relativas: Una medida que cambia dependiendo de algo. %, vw, vh.
+2 parciales, de carácter teórico (multiple-choice) y tp. (se promedian)

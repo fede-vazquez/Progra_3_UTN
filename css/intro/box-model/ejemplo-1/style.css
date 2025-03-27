@@ -1,0 +1,25 @@
+div{
+    color: #ddd;
+    background-color: #393939;
+    border: 2px solid red;
+    position: relative;
+
+    text-align: center;
+
+    width: 200px;
+    padding: 10px;
+
+    margin: 0 auto;
+}
+
+.box{
+    margin: inherit; /* inherit valor por defecto, hace que herede del padre*/
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50px;
+    height: 10px;
+
+    background-color: #4f2626;
+    border: 1px solid #ffffff;
+}

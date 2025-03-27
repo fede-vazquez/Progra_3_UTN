@@ -1,0 +1,22 @@
+body{
+    height: 5000px;
+}
+div{
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    color: #f0f0f0;
+    background-color: #333;
+    border: 1px solid red;
+}
+.my-box1 {
+    position: sticky;
+    top: 0;
+}
+
+.my-box2{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
