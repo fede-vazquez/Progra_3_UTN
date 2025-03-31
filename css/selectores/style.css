@@ -3,6 +3,7 @@ body{
 }
 
 /* Selecciona el "hermano" de la clase, pero solo el siguiente */
+/* En este caso son los h2 siguientes a un elemento con la clase title */
 /* .title + h2{
     color: red;
 } */
@@ -18,4 +19,9 @@ body{
 /* Toma los hijos directos, no todos */
 .box>.title{
     color:aqua
+}
+
+/* Hermanos a distancia */
+.title~h2{
+color: red;
 }

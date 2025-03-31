@@ -1,0 +1,38 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+#about-us, #contact, #gallery{
+    width: 600px;
+    margin: 100px auto;
+}
+
+#contact label{
+    width: 100%;
+    padding: 10px;
+}
+
+.cube {
+    display: inline-block;
+    height: 100px;
+    width: calc(25% - 45px);
+    padding: 10px;
+    margin: 10px;
+    background-color: aquamarine;
+    border: 1px solid #fff;
+    /* Tiene la misma configuración que el margin y el padding. (poner 1 o 4 atributos) */
+    border-radius: 10%;
+}
+
+input[type="text"],
+input[type="email"]{
+    all: unset;
+    border-bottom: 1px solid #fff;
+    border-radius: 2px;
+}
