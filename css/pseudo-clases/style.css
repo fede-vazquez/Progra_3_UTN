@@ -24,3 +24,21 @@ li:hover{
     border: 1px solid red;
     /* transition: background-color linear 0.3s; */
 }
+
+/* Selecciona el tercer elemento de una lista */
+/* Si colocamos (even) le colocará dicho elemento a los elementos pares. si ponemos (odd) son impares */
+li:nth-child(3){
+    background-color: white;
+}
+
+/* Solo le va a dar el color al fondo si el h2 es el 3er elemento dentro de su contenedor. */
+/* Es decir, que sea el 3er hijo del contenedor. */
+h2:nth-child(3){
+    background-color: blue;
+}
+
+/* Le coloca el color solo al primer hijo de dicho tipo por cada contenedor que exista. */
+/* Si colocamos div p:first-of-type solo pasará con los p dentro de un div */
+p:first-of-type{
+    color: blue;
+}
