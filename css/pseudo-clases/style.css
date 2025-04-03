@@ -26,7 +26,7 @@ li:hover{
 }
 
 /* Selecciona el tercer elemento de una lista */
-/* Si colocamos (even) le colocará dicho elemento a los elementos pares. si ponemos (odd) son impares */
+/* Si colocamos (even) le colocará dicho estilo a los elementos pares. si ponemos (odd) son impares */
 li:nth-child(3){
     background-color: white;
 }
