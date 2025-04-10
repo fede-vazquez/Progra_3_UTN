@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+section{
+    background-color: #329142;
+    border: 2px solid red;
+    border-radius: 10px;
+    height: 100vh;
+
+    /* minmax(1000px, 1fr)*/
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr);  */
+    /* grid-template-rows: 100px; */
+    /* grid-auto-rows: 50px; */
+    /* gap: 25px; */
+    /* column-gap: 10px; */
+    /* row-gap: 10px; */
+
+    display: grid;
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* grid-template-rows: repeat(6, 1fr); */
+    /* gap: 5px; */
+
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "sidebar main main"
+        "sidebar main main"
+        "footer footer footer"
+    ;
+}
+
+header, aside, main, footer{
+    background-color: rgb(31, 150, 204);
+    border-radius: 10px;
+    border: 1px solid #000;
+
+    padding: 10px 0;
+    text-align: center;
+}
+
+header{
+    grid-area: header;
+}
+
+aside{
+    padding: 10px;
+    grid-area: sidebar;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "prod1 prod1 prod2 prod2"
+        "prod3 prod4 prod2 prod2"
+        "prod3 prod4 prod2 prod2"
+        "prod5 prod5 prod5 prod6"
+    ;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+}
+main h1{
+    grid-column: 1/3;
+}
+
+footer{
+    grid-area: footer;
+}
+
+main div, aside div{
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: rgb(43, 151, 43);
+}
+
+aside h2{
+    grid-area: titulo;
+}
+aside div:nth-child(2){
+    grid-area: prod1;
+}
+
+aside div:nth-child(3) {
+    grid-area: prod2;
+}
+
+aside div:nth-child(4) {
+    grid-area: prod3;
+}
+
+aside div:nth-child(5) {
+    grid-area: prod4;
+}
+
+aside div:nth-child(6) {
+    grid-area: prod5;
+}
+
+aside div:nth-child(7) {
+    grid-area: prod6;
+}
+
+/* section div:nth-child(1){
+    grid-area: header;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+section div:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+}
+section div:nth-child(3){
+    grid-column: 2;
+    grid-row: 2;
+}
+section div:nth-child(4){
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+section div:nth-child(5){
+    grid-column: 1;
+    grid-row: 3;
+}
+section div:nth-child(6){
+    grid-column: 2/5;
+    grid-row: 3;
+}
+section div:nth-child(7) {
+    grid-column: 1;
+    grid-row: 4;
+}
+section div:nth-child(8) {
+    grid-column: 2;
+    grid-row: 4;
+}
+section div:nth-child(9) {
+    grid-column: 3/5;
+    grid-row: 4;
+} */
