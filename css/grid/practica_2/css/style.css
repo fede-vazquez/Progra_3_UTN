@@ -9,8 +9,7 @@ body{
     height: 100vh;
 }
 section {
-    max-width: 400px;
-    width: 50%;
+    max-width: 450px;
     height: 100%;
     margin: auto;
     border: 2px solid #f0f0f0;
@@ -37,12 +36,12 @@ body div:nth-child(2){
 
 }
 body div:nth-child(3){
-    grid-column: 2/4;
-    grid-row: 2;
-}
-body div:nth-child(4){
     grid-column: 8;
     grid-row: 2/6;
+}
+body div:nth-child(4){
+    grid-column: 2/4;
+    grid-row: 2;
 }
 body div:nth-child(5){
     grid-column: 1/4;
@@ -75,4 +74,8 @@ body div:nth-child(11) {
 body div:nth-child(12) {
     grid-column: 7;
     grid-row: 9;
+}
+body div:nth-child(13) {
+    grid-column: 3/5;
+    grid-row: 3;
 }

@@ -33,14 +33,14 @@ ul li{
     background-color: #222;
 }
 
+li.nombre-dia+li:not(.nombre-dia){
+    grid-column: 2;
+}
+
 li.nombre-dia{
     background-color: #f0f0f0;
     color: #333;
     border: 1px solid #c2c2c2;
     text-align: center;
     font-weight: bold;
-}
-
-.primer-dia-mes{
-    grid-column: 2;
 }
