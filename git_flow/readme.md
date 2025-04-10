@@ -65,3 +65,7 @@ Es un rol dentro de desarrollo, se encarga de construir, testear, y desplegar el
 Son muy importantes en cada una de las instancias del desarrollo, son los que ayudan a saber si puede o no aceptarse una PR.
 
 # Estos temas serán teoría en los parciales, no prácticos.
+
+# Inter
+
+Funciona como Prettier, para que todos trabajen con la misma sintaxis, nombre de clases, variables, etc.
