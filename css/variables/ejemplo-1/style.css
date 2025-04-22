@@ -1,0 +1,39 @@
+:root{
+    --f-size: 24px;
+    --p-color: red;
+    --s-color: blue;
+    --mi-super-fondo: linear-gradient(to right, var(--p-color), var(--s-color));;
+}
+
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #333;
+}
+
+main{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+section{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 400px;
+    --f-size: 50px;
+    background: var(--mi-super-fondo)
+}
+
+section h3{
+    font-size: var(--f-size);
+}
+
+section p{
+    font-size: calc(var(--f-size) - 6px);
+}
+
+h2{
+    font-size: var(--f-size);
+}

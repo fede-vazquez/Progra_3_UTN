@@ -1,0 +1,76 @@
+:root{
+    --p-color: #f0f0f0;
+    --s-color: #d7d7d7;
+    --t-color: #3273cd;
+    --p-shadow: 0 0 15px #979797;
+    --s-shadow: 0 0 5px #202020;
+    --w-f-color: #f0f0f0;
+    --b-f-color: #000;
+}
+
+.dark-mode{
+    --p-color: #333;
+    --s-color: #d7d7d7;
+    --t-color: #3273cd;
+    --p-shadow: 0 0 15px #979797;
+    --s-shadow: 0 0 5px #202020;
+    --w-f-color: #f0f0f0;
+    --b-f-color: #000;
+
+    transition: all 1s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: var(--p-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 250px;
+    height: 200px;
+    background-color: #ffffff;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--s-color);
+    border-radius: 20px;
+    padding: 20px;
+
+    box-shadow: var(--p-shadow);
+}
+
+section div{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+button{
+    all: unset;
+    background-color: var(--t-color);
+    padding: 10px 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--s-shadow);
+    cursor: pointer;
+    color: var(--w-f-color);
+}
+
+#modo{
+    position: absolute;
+    top: 10px;
+}

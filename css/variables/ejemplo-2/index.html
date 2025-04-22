@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <button id="modo">Cambiar modo</button>
+    <main>
+        <section>
+            <div>
+                <h3>Product</h3>
+                <span>$$$</span>
+            </div>
+            <div class="img"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <button>Comprar</button>
+        </section>
+    </main>
+
+    <script>
+        let ButtonEl = document.getElementById("modo");
+        ButtonEl.addEventListener("Click", () => {
+            document.body.classList.toggle("dark-mode");
+        })
+    </script>
+</body>
+
+</html>
