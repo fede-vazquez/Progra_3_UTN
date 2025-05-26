@@ -51,30 +51,44 @@ function genArticle({ position, img, name, job, text }) {
 }
 
 function startSlider(type) {
-    const lastEl = document.querySelector(".last");
+    let lastEl = document.querySelector(".last");
     const activeEl = document.querySelector(".active");
+
     let nextEl = activeEl.nextElementSibling;
     if (!nextEl) {
         nextEl = containerEl.firstElementChild;
     }
+
+    // Elimina las clases que siempre se van a cambiar.
     activeEl.classList.remove("active");
     lastEl.classList.remove("last");
-    nextEl.classList.remove("next");
 
-    // Acomodar esto, tiene un error cuando es el ultimo.
+    // Si no se manda un tipo significa que es el botón de next. Entonces eliminarmos la clase del elemento siguiente
+    if (!type) {
+        nextEl.classList.remove("next");
+    }
+
     if (type === "prev") {
-        activeEl.classList.add("last");
+        // Si se va para atras, el elemento activo será el siguiente, y el anterior será el activo.
+        activeEl.classList.add("next");
         lastEl.classList.add("active");
-        nextBtnEl = nextBtnEl.previousElementSibling;
 
-        if (!nextEl) {
-            nextEl = containerEl.lastElementChild;
+        // El nuevo elemento anterior será el anterior del antiguo anterior.
+        lastEl = lastEl.previousElementSibling;
+
+        // Si no hay elemento anterior, significa que el activo es el primer hijo del contenedor, entonces el anterior será el ultimo del contenedor.
+        if (!lastEl) {
+            lastEl = containerEl.lastElementChild;
         }
 
-        nextEl.classList.remove("next");
+        // Eliminamos la clase "next" del nuevo elemento anterior y le agregamos la clase "last"
+        lastEl.classList.remove("next");
+        lastEl.classList.add("last");
+
         return;
     }
 
+    // Si es next solamente cambiamos el activo que será el anterior, el anteríor que será un siguiente más, y el siguiente que será el nuevo activo.
     nextEl.classList.add("active");
     activeEl.classList.add("last");
     lastEl.classList.add("next");
