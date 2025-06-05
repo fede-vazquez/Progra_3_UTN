@@ -24,3 +24,6 @@ console.log(TYPES);
 // Esto funciona para evitar los magic strings y magic numbers
 
 // if(variable == TYPES.admin)
+
+// Devuelve un true o un false si el objeto tiene dicha propiedad.
+console.log(Object.hasOwn(persona, "nombre"));
