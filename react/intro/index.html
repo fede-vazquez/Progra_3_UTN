@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script type="text/babel">
+        const divRoot = document.getElementById("root")
+
+        const root = ReactDOM.createRoot(divRoot);
+
+        // Una variable, los operadores y los elementos jsx son expresiones
+        const nombre = "Juan"
+        const edad = 17
+
+        const body = (
+            // Esto se usa para no tener todos los elementos dentro de elementos div
+            // Se usa <React.Fragment> o solo vacío
+            <>
+                <h1>Hola mundo {nombre}</h1>
+                <h2>subtitulo</h2>
+                <h3>{edad >= 18 ? "Podes pasar" : "No podes pasar"}</h3>
+            </>
+        ); // Elemento jsx -> No es HTML.
+
+        const app = (
+            <>
+                {body}
+            </>
+        )
+
+        root.render(app)
+    </script>
+</body>
+
+</html>
+<!-- Mini ejercicio -->
+<!-- Un h1 que diga bienvenido, un p que pregunte como estoy y una imagen -->
