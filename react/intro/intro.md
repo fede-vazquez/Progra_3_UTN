@@ -18,7 +18,7 @@ Es una parte que es reutilizable siempre y cuando sea compatible.
 
 ## Jsx
 
-Es una extensión
+Es una extensión y una manera de interpretar HTML
 objetos: {}
 arrays: []
 strings: ""
@@ -44,3 +44,13 @@ Un elemento jsx o componente debe renderizar un y solo un elemento jsx.
 
 Que? -> Se incrustan expresiones
 Sintaxis -> {aca dentro va la expresión}
+
+Donde? -> Jsx
+
+## Tipos de componentes
+
+componentes de clase y componentes funcionales
+
+**de clase:**
+
+**funcionales:**
