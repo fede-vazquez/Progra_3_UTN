@@ -54,3 +54,24 @@ componentes de clase y componentes funcionales
 **de clase:**
 
 **funcionales:**
+
+# Virtual dom
+
+Crea una copia del dom, lo que hace después es comparar ambos, el dom y el virtual
+Busca lo que cambió y luego lo modifica en el dom original.
+Esto se llama SPA (Single Page Application)
+
+# hooks
+
+Lo que va a hacer es "enganchar" una funcionalidad específica
+Todos arrancan con "use" y son funciones
+
+## useState(valor)
+
+Lleva el estado de un componente.
+
+Los estados son asíncronos, por eso si tenemos un estado contador y lo seteamos con un contador++ no se actualiza correctamente
+
+el setState te permite pasarle una función, la cual tiene como parámetro el estado anterior.
+ejemplo: setContador(prevCont => prevCont + 1)
+Esto gracias al callStack
